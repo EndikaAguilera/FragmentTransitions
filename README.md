@@ -23,3 +23,9 @@ ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
 ```java
 public class YourFragment extends BaseFragment {}
 ```
+
+## Horizontal Transitions Demo
+  ![screen](../master/art/ft_horizontal.gif)
+
+## Vertical Transitions Demo
+  ![screen](../master/art/ft_vertical.gif)
