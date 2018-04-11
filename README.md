@@ -20,7 +20,7 @@ public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, 
 FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
 ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
 ```  
-  - Make sure that all the fragment you want to animate extends BaseFragment:
+  - Make sure that all the fragments you want to animate extends BaseFragment:
 ```java
 public class YourFragment extends BaseFragment {}
 ```
