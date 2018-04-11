@@ -1,4 +1,5 @@
-# FragmentsTest
+# FragmentTransitions
+
 Android Custom FragmentTransactions Transitions Example.
 
 ## Features
