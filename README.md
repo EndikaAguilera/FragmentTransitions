@@ -1,11 +1,9 @@
-# FragmentTransitions
-
 Android Custom FragmentTransactions Transitions Example.
 
 ## Features
   - Vertical and Horizontal transitions.
   - Enable/Disable transitions on initial fragment load.
-    - If you don't any fragment to be aninated on it's initial load, just simply call:
+    - If you don't any fragment to be animated on it's initial load, just simply call:
 ```java
 @Override
 public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
