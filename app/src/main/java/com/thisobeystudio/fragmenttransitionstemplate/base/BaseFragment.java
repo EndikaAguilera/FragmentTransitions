@@ -36,9 +36,9 @@ public class BaseFragment extends Fragment {
     // parent activity
     protected MainActivity mMainActivity;
 
-    // handles if each fragment will be animated or not
+    // a flag to handle if each fragment will be animated or not
     // if want all fragments to be animated, this param can be removed
-    protected boolean mAnimate = true;
+    private boolean mAnimate = true;
 
     // required mAnimate = true to work
     // if this is false only will animate on
@@ -99,13 +99,16 @@ public class BaseFragment extends Fragment {
                     return ObjectAnimator.ofFloat(null, property, -1f, 0f);
                 } else return super.onCreateAnimator(transit, enter, nextAnim);
             } else {
-                if (transit == FragmentTransaction.TRANSIT_FRAGMENT_OPEN) {
-                    return enter ? ObjectAnimator.ofFloat(null, property, 1f, 0f)
-                            : ObjectAnimator.ofFloat(null, property, 0f, -1f);
-                } else if (transit == FragmentTransaction.TRANSIT_FRAGMENT_CLOSE) {
-                    return enter ? ObjectAnimator.ofFloat(null, property, -1f, 0f)
-                            : ObjectAnimator.ofFloat(null, property, 0f, 1f);
-                } else return super.onCreateAnimator(transit, enter, nextAnim);
+                switch (transit) {
+                    case FragmentTransaction.TRANSIT_FRAGMENT_OPEN:
+                        return enter ? ObjectAnimator.ofFloat(null, property, 1f, 0f)
+                                : ObjectAnimator.ofFloat(null, property, 0f, -1f);
+                    case FragmentTransaction.TRANSIT_FRAGMENT_CLOSE:
+                        return enter ? ObjectAnimator.ofFloat(null, property, -1f, 0f)
+                                : ObjectAnimator.ofFloat(null, property, 0f, 1f);
+                    default:
+                        return super.onCreateAnimator(transit, enter, nextAnim);
+                }
             }
         } else return super.onCreateAnimator(transit, enter, nextAnim);
     }
