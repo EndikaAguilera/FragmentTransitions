@@ -1,7 +1,7 @@
 # FragmentsTest
 Android Custom FragmentTransactions Transitions Example.
 
-# Features
+## Features
   - Vertical and Horizontal transitions.
   - Enable/Disable transitions on initial fragment load.
     - If you don't any fragment to be aninated on it's initial load, just simply call:
@@ -16,13 +16,13 @@ Android Custom FragmentTransactions Transitions Example.
         }
     ```
     
-# Notice
+## Notice
   - FragmentTransaction must be set as follows:
-  ´´´java
-    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-    ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-´´´
+```java
+FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+```  
   - Make sure that all the fragment you want to animate extends BaseFragment:
-´´´java
-    public class YourFragment extends BaseFragment {}
-´´´
+```java
+public class YourFragment extends BaseFragment {}
+```
