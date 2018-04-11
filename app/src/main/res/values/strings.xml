@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Fragments Transitions Template</string>
-    <string name="siguiente">siguiente</string>
-    <string name="anterior">anterior</string>
+    <string name="app_name">FragmentTransitions</string>
+    <string name="next">next</string>
+    <string name="previous">previous</string>
     <string name="four">4</string>
     <string name="three">3</string>
     <string name="two">2</string>
