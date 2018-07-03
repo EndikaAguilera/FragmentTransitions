@@ -25,7 +25,7 @@ public class YourFragment extends BaseFragment {}
 ```
 
 ## Horizontal Transitions Demo
-  ![screen](../master/art/ft_horizontal.gif)
+  ![screen](https://raw.githubusercontent.com/endikaaguilera/myreposassets/master/fragment_transitions/ft_horizontal.gif)
 
 ## Vertical Transitions Demo
-  ![screen](../master/art/ft_vertical.gif)
+  ![screen](https://raw.githubusercontent.com/endikaaguilera/myreposassets/master/fragment_transitions/ft_vertical.gif)
